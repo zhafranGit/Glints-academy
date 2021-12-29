@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar javascript</title>
+
+    <script>
+
+        var name = "zahfran Saloom";
+        var VisitorCout =  "50322";
+
+        alert("Selamat Datang di tutorial javascript " + name);
+        function sayHello() {
+            alert("AW !");
+        }
+        document.write("<h1> Hello dunia tipu-tipu </h1>");
+        document.write("<hr>");
+        document.write("<p> Saya Sedang Belajar Javascript</p>");
+        document.write("di <b>internet</b>");
+
+    </script>
+</head>
+<body>
+
+    <h1>tutorial Javascript Untuk Pemula</h1>
+    <div id="hasil-output"></div>
+    <script>
+        var pertanyaan = confirm("Apalah kamu berumur diatas 18 tahun ?");
+
+        var hasil = pertanyaan ? "selamat datang" : "kamu tidak boleh masuk";
+        alert(hasil);
+    </script>
+
+    <script>
+        var hasil = document.getElementById("hasil-output");
+        hasil.innerHTML = "<p> Aku suka Javascript<p>";
+    </script>
+    <button onclick="sayHello()">Kelik Aku!</button>
+
+</body>
+</html>

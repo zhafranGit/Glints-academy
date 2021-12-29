@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pemanasan Javascript part 2</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Inputkan nilai Akhir : ");
+        var grade = "";
+        if(nilai >= 90) {grade = "A"}
+        else if (nilai >= 80) {grade = "B+"}
+        else if (nilai >= 70) {grade = "B"}
+        else if (nilai >= 60) {grade = "C+"}
+        else if (nilai >= 50) {grade = "C"}
+        else if (nilai >= 40) {grade = "D"}
+        else if (nilai >= 30) {grade = "E"}
+        else {grade = "F";}
+        document.write(`<p> Grade anda : ${grade} </p>`);
+    </script>
+
+    <script>
+        var jawab  = prompt(
+            "silahkan pilih"
+        )
+        var hadiah  = " ";
+        switch (jawab) {
+            case "1":
+                hadiah = "kosong";
+                break;
+            case "2":
+                hadiah = "kosong kosong";
+                break;
+            case "3":
+                hadiah = "kosong kosong kosong";
+                break;
+            case "4":
+                hadiah = "kosong kosong kosong";
+                break;
+            default:
+                document.write("<p>salah</p>")
+                break;
+        }
+        if (hadiah === "") {
+            document.write("<p>gagal<p>");
+        } else {
+            document.write("<p> Selamat kamu dapat "+hadiah+" </p>");
+        }
+    </script>
+
+    <script>
+        
+        var jwb = prompt("Apakah Jakarta ibu Kota indonesia");
+
+        var jawaban = (jwb.toUpperCase() == "iya")? "benar" : "Salah";
+
+        document.write(`Jawaban anda : <b> ${jawaban} </b>`);
+        
+    </script>
+
+    <script>
+        var username = prompt("username :");
+        var password = prompt("password :");
+
+        if (username == "user") {
+            if (password == "user") {
+                document.write("Selamat datang pak bosse");
+            } else{
+                document.write("password salah");
+            }
+        }else{
+            document.write("anda tidak terdaftar!")
+        }
+    </script>
+</body>
+</html>
